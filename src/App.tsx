@@ -102,7 +102,7 @@ export default function App() {
         </div>
 
         <Typography fontSize="sm" sx={{ alignSelf: 'center' }}>
-          <Link href="#">Contact us</Link>
+          <Link href="#"><b>Contact us</b></Link>
         </Typography>
       </Sheet>
     </CssVarsProvider>
