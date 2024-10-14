@@ -1,0 +1,28 @@
+.star-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 3.25rem;
+    color: gray;
+    transition: color 0.5s ease;
+}
+
+.star {
+    margin: 0 2px;
+}
+
+.star.filled {
+    color: gold;
+    animation: fillAnimation 0.5s forwards;
+}
+
+@keyframes fillAnimation {
+    0% {
+        color: gray;
+    }
+
+    100% {
+        color: gold;
+    }
+}
