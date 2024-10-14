@@ -13,7 +13,6 @@ import StarRating from "./StarRating.tsx";
 import Textarea from '@mui/joy/Textarea';
 import IconButton from '@mui/joy/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import { maxWidth } from '../node_modules/@mui/system/index.d.ts';
 
 function ModeToggle() {
   const { mode, setMode } = useColorScheme();
