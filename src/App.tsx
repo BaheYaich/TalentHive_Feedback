@@ -2,6 +2,7 @@ import './App.css';
 import * as React from 'react';
 import { CssVarsProvider } from '@mui/joy/styles';
 import { useColorScheme } from '@mui/joy/styles';
+import CssBaseline from '@mui/joy/CssBaseline';
 import Typography from '@mui/joy/Typography';
 import Sheet from '@mui/joy/Sheet';
 import Button from '@mui/joy/Button';
@@ -12,6 +13,7 @@ import StarRating from "./StarRating.tsx";
 import Textarea from '@mui/joy/Textarea';
 import IconButton from '@mui/joy/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import { maxWidth } from '../node_modules/@mui/system/index.d.ts';
 
 function ModeToggle() {
   const { mode, setMode } = useColorScheme();
@@ -43,10 +45,12 @@ function ModeToggle() {
 export default function App() {
   return (
     <CssVarsProvider>
+      <CssBaseline />
       <ModeToggle />
       <Sheet
         sx={{
-          width: '460px',
+          width: '100%',
+          maxWidth : '460px',
           margin: 'auto',
           marginTop: '20px',
           padding: '20px',
